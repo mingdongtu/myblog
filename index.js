@@ -3,7 +3,7 @@ const app = express();
 const indexRouter = require('./routes/index');
 const userRouter = require('./routes/users')
 
-app.set('')
+app.set('views',path.join(__dirname,'views'))
 app.use('/',indexRouter);
 app.use('/users',userRouter);
 
